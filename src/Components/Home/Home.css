@@ -1,0 +1,73 @@
+.Home_image{
+    height: 500px;
+    width: 550px;
+    float: right ;
+    margin-right: 20px;
+    margin-top: 33px;
+    /*background-color: #316db1;*/
+}
+.Home_content{
+    width: 600px;
+    height: 400px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 20px;
+    padding: 10px 5px;
+}
+.Hi{
+    font-weight: 800;
+    font-size: 40px;
+    color: #0B0C10;
+}
+.Name{
+    font-weight: 800;
+    font-size: 40px;
+    color: #0B0C10;
+}
+.Speciality{
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+.Speciality li{
+    position: relative;
+    top: -10;
+    list-style: none;
+    font-size: 40px;
+    font-weight: 800;
+    color: #2951d6;
+    animation: slide 5s steps(2) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -60px;
+    }
+}
+.Speciality li span{
+    position: relative;
+    display: inline-block;
+    height: 60px;
+}
+.Speciality li span::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #e3e3e3;
+    border-left: 2px solid #2951d6;
+    position: absolute;
+    left: 0;
+    animation: typing 2.5s steps(23) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin-left: 40px;
+    }
+}
+.presentation{
+    color: #0B0C10;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+}
