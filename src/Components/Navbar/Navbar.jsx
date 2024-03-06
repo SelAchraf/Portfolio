@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -26,9 +28,7 @@ class Navbar extends Component {
                         <a className='menu-item'>Contact</a>
                     </li>    
                 </ul>
-                <div className="menu_icon">
-                    
-                </div>
+                <FontAwesomeIcon icon={faBars} className='menu_icon'/>
             </nav>
         );
     }

@@ -65,12 +65,11 @@ nav ul li{
 }
 
 .menu_icon{
+    color: #ffffff;
     height: 45px;
-    width: 45px;
-    background-color: #ffffff;
     display: none;
+    padding-right: 15px;
 }
-
 
 
 
@@ -111,6 +110,7 @@ nav ul li{
     }
 
     .menu_icon{
+        height: 50px;
         display: flex;
     }
 }

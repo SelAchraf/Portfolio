@@ -1,4 +1,6 @@
 import { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faTelegram, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import './Home.css';
 
 class Home extends Component{
@@ -29,10 +31,9 @@ class Home extends Component{
                 </div>
             </div>
             <div className="Home_icons">
-                <div className="icon github"></div>
-                <div className="icon facebook"></div>
-                <div className="icon whatsapp"></div>
-                <div className="icon telegram"></div>
+                <FontAwesomeIcon icon={faGithub} className='github_icon' />
+                <FontAwesomeIcon icon={faTelegram} className='telegram_icon'/>
+                <FontAwesomeIcon icon={faFacebook} className='facebook_icon'/>
             </div>
         </section>
         );
