@@ -26,6 +26,9 @@ class Navbar extends Component {
                         <a className='menu-item'>Contact</a>
                     </li>    
                 </ul>
+                <div className="menu_icon">
+                    
+                </div>
             </nav>
         );
     }

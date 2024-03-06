@@ -1,10 +1,35 @@
 .container{
-    max-width: 1300px !important;
     margin: 0 auto;
-    position: relative;
+    padding: 0 24px;
+    max-width: 1500px;
 }
-@media (max-width: 1300px){
+
+
+
+
+
+@media(max-width: 620px){
     .container{
-        padding: 0 1.5rem;
+        padding: 0 10px;
     }
 }
+
+@media(min-width: 621px) and (max-width: 1110px){
+    .container{
+        padding: 0 20px;
+    }
+}
+
+@media(min-width: 1367px) and (max-width: 1500px){    /* DONE*/
+    .container{
+        padding: 0 75px;
+    }
+}
+
+@media(min-width: 1500px){  /*DONE*/
+    .container{
+        background-color: #e3e3e3;
+        padding: 0 125px;
+    }
+}
+
