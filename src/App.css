@@ -8,18 +8,6 @@
 
 
 
-@media(max-width: 620px){
-    .container{
-        padding: 0 10px;
-    }
-}
-
-@media(min-width: 621px) and (max-width: 1110px){
-    .container{
-        padding: 0 20px;
-    }
-}
-
 @media(min-width: 1367px) and (max-width: 1500px){    /* DONE*/
     .container{
         padding: 0 75px;

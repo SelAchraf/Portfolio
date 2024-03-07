@@ -3,12 +3,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css';
 
-class Navbar extends Component {
+class Navbar extends Component {    
+    toggleItems = () => {
+        const items = document.querySelector('.items');
+        items.classList.toggle('active');
+    };
+
     render() {
         return (
             <nav>
                 <img className='Logo' src='SHITO_LOGO.png' alt='Logo'></img>
-                <ul>
+                <ul className='items'>
                     <li>
                         <a className='menu-item'>Home</a>
                     </li>
@@ -28,7 +33,8 @@ class Navbar extends Component {
                         <a className='menu-item'>Contact</a>
                     </li>    
                 </ul>
-                <FontAwesomeIcon icon={faBars} className='menu_icon'/>
+                <FontAwesomeIcon icon={faBars} className='menu_icon' onClick={this.toggleItems}/>
+                
             </nav>
         );
     }

@@ -1,7 +1,7 @@
 .Home_container{
     height: 90vh;
     display: grid;
-    grid-template-columns: minmax(620px,1fr) minmax(400px,1fr);
+    grid-template-columns: 1fr minmax(400px,1fr);
     grid-template-rows: 2fr;
     gap:0 30px;
 }
@@ -11,9 +11,6 @@
     flex-direction: column;
     align-items: flex-center;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5%;
 }
 
 .Home_image{
@@ -70,57 +67,16 @@
 }
 
 .Home_title{
-    min-width: 580px;
     font-weight: 800;
     font-size: 40px;
     color: #0B0C10;
 }
 
 .Specialty{
-    padding-left: 0;
-    height: 60px;
-    line-height: 60px;
-    overflow: hidden;
-}
-
-.Specialty li{
     position: relative;
-    top: 0;
-    list-style: none;
     font-weight: 800;
     font-size: 40px;
     color: #666667;
-    animation: slide 10.5s steps(3) infinite;
-}
-
-@keyframes slide {
-    100%{
-        top: -180px;
-    }
-}
-
-.Specialty li span{
-    position: relative;
-    display: inline-block;
-    height: 60px;
-}
-
-.Specialty li span::after{
-    content: "";
-    height: 100%;
-    width: 100%;
-    background: #e3e3e3;
-    border-left: 2px solid #666667;
-    position: absolute;
-    left: 0;
-    animation: typing 3.5s steps(23) infinite;
-}
-
-@keyframes typing {
-    100%{
-        left: 100%;
-        margin-left: 40px;
-    }
 }
 
 .Home_description{
@@ -153,8 +109,9 @@
     gap: 20px;
 }
 
-.github_icon, .telegram_icon, .facebook_icon{
-    height: 45px;
+.github_icon, .telegram_icon, .facebook_icon, .instagram_icon{
+    height: 35px;
+    color: #0B0C10;
 }
 
 
@@ -162,50 +119,20 @@
 
 @media(max-width: 620px){
     .Home_container{
-        height: 92vh;
-        grid-template-rows: auto;
+        height: auto;
+        grid-template-rows: repeat(3,fit-content);
         grid-template-columns: 100%;
         gap: 20px 0;
     }
 
     .Home_content{
-        padding: 0;
+        
+        padding-top: 30px;
         grid-row: 1/2;
-        justify-content: flex-end;
     }
 
-    .Home_title{
-        min-width: auto;
-        font-size: 28px;
-        padding-top: 10px;
-    }
-
-    .Specialty{
-        height: 45px;
-        line-height: 45px;
-    }
-    
-    .Specialty li{
-        font-size: 28px;
-    }
-    
-    @keyframes slide {
-        100%{
-            top: -135px;
-        }
-    }
-    
-    .Specialty li span{
-        position: relative;
-        display: inline-block;
-        height: 45px;
-    }
-
-    @keyframes typing {
-        100%{
-            left: 100%;
-            margin-left: 20px;
-        }
+    .Home_title, .Specialty{
+        font-size: 35px;
     }
 
     .Home_description{
@@ -215,6 +142,7 @@
     .Home_image{
         grid-row: 2/3;
         padding: 20px 0;
+        margin-top: 20px;
     }
 
     .Home_image .image{
@@ -224,14 +152,8 @@
 
     .Home_icons{
         height: fit-content;
-        padding-bottom: 10px;
         grid-row: 3/4;
     } 
-
-    .icon{
-        width: 40px;
-        height: 40px;
-    }
 }
 
 @media(min-width: 621px) and (max-width: 1110px){

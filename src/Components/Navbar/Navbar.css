@@ -1,22 +1,21 @@
 nav{
     position: sticky;
-    width: 100%;
     top: 0;
     z-index: 30;
     padding: 0 5%;
-    height: 10vh;
-    display: flex;                  /*Obligatoire pour utiliser align-items & justify content*/
+    height: 58px;
+    display: flex;                  
     align-items: center; 
     justify-content: space-between;      
     background-color: #1F2833;   
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px #000000b3;
 }
 
 nav ul{
     display: flex;
     list-style: none;
     gap: 35px;  
-    padding: 0;           /*the space between li*/
+    padding: 0;           
 }
 
 nav ul li{
@@ -25,9 +24,8 @@ nav ul li{
 }
 
 .menu-item{
-    text-decoration: none;                    /*Pour le cas d'affecter un lien (href)*/
-    font-size: 18px;
-    font-weight:500;
+    text-decoration: none;                    
+    font-size: 20px;
     color: #ffffff;
     cursor: pointer;
     position: relative;
@@ -60,62 +58,42 @@ nav ul li{
 
 .Logo{
     height: 43px;
-    width: 90px; 
-    margin-right: 42PX; 
+    width: 85px;
 }
 
 .menu_icon{
     color: #ffffff;
-    height: 45px;
+    height: 40px;
     display: none;
-    padding-right: 15px;
 }
 
-
-
-
-
-
-
-
-@media(max-width: 620px){
-    nav{
-        height: 8vh;
-    }
-    
+@media(max-width: 1110px){          
     nav ul{
-        display: none;          /*the space between li*/
+        height: fit-content;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 56px;
+        background-color: #1F2833;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; 
+        padding: 22px 0 20px 0;    
+        transition: opacity 0.3s ease-in-out;
+        opacity: 0; 
     }
 
-    .Logo{
-        height: 75%; 
+    nav .active {
+        opacity: 1; 
     }
+
     .menu_icon{
         display: flex;
     }
+
 }
 
-@media(min-width: 621px) and (max-width: 1110px){
-    nav{
-        height: 9vh;
-    }
-
-    nav ul{
-        display: none;          /*the space between li*/
-    }
-
-    .Logo{
-        height: 75%; 
-        width: 100px;
-    }
-
-    .menu_icon{
-        height: 50px;
-        display: flex;
-    }
-}
-
-@media(min-width: 1367px) and (max-width: 1500px){   /*DONE*/
+@media(min-width: 1367px) and (max-width: 1500px){   
     nav{
         padding: 0 10%;
         height: 8vh;
@@ -136,7 +114,7 @@ nav ul li{
     }
 }
 
-@media(min-width: 1500px){     /*DONE*/
+@media(min-width: 1500px){     
     nav{
         padding: 0 10%;
         height: 8vh;
