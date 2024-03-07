@@ -152,6 +152,7 @@
 
     .Home_icons{
         height: fit-content;
+        padding-bottom: 15px;
         grid-row: 3/4;
     } 
 }
