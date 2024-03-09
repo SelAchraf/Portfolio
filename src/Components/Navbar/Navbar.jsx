@@ -1,12 +1,25 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faX} from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css';
 
 class Navbar extends Component {    
-    toggleItems = () => {
+    Show_nav = () => {
         const items = document.querySelector('.items');
-        items.classList.toggle('active');
+        const open = document.querySelector('.open_menu_icon');
+        const close = document.querySelector('.close_menu_icon');        
+        items.classList.toggle('show_menu');
+        open.classList.remove('show_icon');
+        close.classList.toggle('show_icon');
+    };
+
+    hide_nav = () => {
+        const items = document.querySelector('.items');
+        const open = document.querySelector('.open_menu_icon');
+        const close = document.querySelector('.close_menu_icon');        
+        items.classList.remove('show_menu');
+        open.classList.toggle('show_icon');
+        close.classList.remove('show_icon');
     };
 
     render() {
@@ -33,8 +46,8 @@ class Navbar extends Component {
                         <a className='menu-item'>Contact</a>
                     </li>    
                 </ul>
-                <FontAwesomeIcon icon={faBars} className='menu_icon' onClick={this.toggleItems}/>
-                
+                <FontAwesomeIcon icon={faBars} className='open_menu_icon show_icon' onClick={this.Show_nav}/>
+                <FontAwesomeIcon icon={faX} className='close_menu_icon' onClick={this.hide_nav}/>
             </nav>
         );
     }

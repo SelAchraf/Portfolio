@@ -10,7 +10,7 @@ class Home extends Component{
         <section className='Home_container'>
             <div className='Home_content'>
                 <h1 className='Home_title'>Hi,<br />I'am SELOUGHA Mohamed Achraf</h1>
-                <h1 className='Specialty'>
+                <h1 className='Home_specialty'>
                     <Typewriter
                             words={['University student', 'Graphic designer', 'Front-end web developer']}
                             loop={true}
@@ -21,7 +21,7 @@ class Home extends Component{
                             delaySpeed={1500}
                     />
                 </h1>    
-                <p className='Home_description'>This site represents my CV as a computer scientist. From here you can view all my achievements, everything related to my academic career, the certificates I obtained, my skills, as well as the services that I can provide to you...<br />To contact me, send me an email by going to the Contact page, or through the social media pages</p>
+                <p className='Home_description'>This website represents my CV as a computer scientist. From here you can view all my achievements, everything related to my academic career, the diplomas I obtained, my skills, as well as the services that I can provide to you...<br />To contact me, send me an email by going to the Contact page, or through the social media pages below</p>
             </div>
             <div className='Home_image'>
                 <div className='image'>

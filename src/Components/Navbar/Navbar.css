@@ -3,7 +3,7 @@ nav{
     top: 0;
     z-index: 30;
     padding: 0 5%;
-    height: 58px;
+    height: 60px;
     display: flex;                  
     align-items: center; 
     justify-content: space-between;      
@@ -46,13 +46,13 @@ nav ul li{
     height: 100%;
     border-bottom: 2px solid #66FcF1;
     border-radius: 12px;
-    transform: scale(0) translateY(50px);
+    transform: scale(0) translateY(40px);
     transition: .5s;
     opacity: 0;
 }
 
 .menu-item:hover::before {
-    transform: scale(1) translateY(4px);
+    transform: scale(1) translateY(3px);
     opacity: 1;
 }
 
@@ -61,76 +61,56 @@ nav ul li{
     width: 85px;
 }
 
-.menu_icon{
+.open_menu_icon{
     color: #ffffff;
     height: 40px;
     display: none;
 }
 
-@media(max-width: 1110px){          
+.close_menu_icon{
+    color: #ffffff;
+    height: 36.5px;
+    display: none;
+    margin-right: 3px;
+}
+
+
+
+@media(max-width: 874px){        
     nav ul{
         height: fit-content;
         position: absolute;
         width: 100%;
         left: 0;
-        top: 56px;
-        background-color: #1F2833;
+        top: 60px;
+        background-color: #1F2833; 
         flex-direction: column;
         align-items: center;
         gap: 20px; 
-        padding: 22px 0 20px 0;    
-        transition: opacity 0.3s ease-in-out;
+        padding: 20px 0;  
+        transition: opacity 0.4s ease-in-out;
         opacity: 0; 
     }
 
-    nav .active {
+    .show_menu {
         opacity: 1; 
     }
-
-    .menu_icon{
+    
+    .show_icon{
         display: flex;
     }
-
+    
 }
 
-@media(min-width: 1367px) and (max-width: 1500px){   
+
+@media(min-width: 1401px) and (max-width: 1700px){
     nav{
-        padding: 0 10%;
-        height: 8vh;
-    }
-
-    nav ul{
-        gap: 50px;       
-    }
-
-    .menu-item{                
-        font-size: 20px;
-        font-weight:600;
-    }
-
-    .Logo{
-        height: 70%;
-        width: 105px; 
+        padding: 0 7%;
     }
 }
 
-@media(min-width: 1500px){     
+@media(min-width: 1701px){
     nav{
-        padding: 0 10%;
-        height: 8vh;
-    }
-
-    nav ul{
-        gap: 50px;       
-    }
-
-    .menu-item{                 
-        font-size: 21px;
-        font-weight:600;
-    }
-
-    .Logo{
-        height: 70%;
-        width: 108px; 
+        padding: 0 15%;
     }
 }
