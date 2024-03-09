@@ -83,7 +83,7 @@
 .Home_description{
     position: relative;
     color: #0B0C10;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 12px;
 }
 
@@ -175,10 +175,6 @@
     .Home_title, .Home_specialty{
         font-size: 35px;
     }
-
-    .Home_description{
-        margin-top: 0px;
-    }
     
     .Home_image{
         grid-row: 2/3;
@@ -200,8 +196,7 @@
     .Home_specialty{
         height: 127px;
     }
-
     .Home_description{
-        margin-top: 5px;
+        margin-top: 0px;
     }
 }
