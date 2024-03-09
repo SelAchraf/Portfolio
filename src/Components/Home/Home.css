@@ -138,6 +138,10 @@
     .Home_specialty{
         height: 100px;
     }
+
+    .Home_description{
+        margin-top: 0px;
+    }
     
     .Home_image{
         grid-row: 2/3;
@@ -171,6 +175,10 @@
     .Home_title, .Home_specialty{
         font-size: 35px;
     }
+
+    .Home_description{
+        margin-top: 0px;
+    }
     
     .Home_image{
         grid-row: 2/3;
@@ -191,5 +199,9 @@
 @media(min-width: 875px) and (max-width: 1078px){
     .Home_specialty{
         height: 127px;
+    }
+
+    .Home_description{
+        margin-top: 5px;
     }
 }
