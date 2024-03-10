@@ -25,15 +25,19 @@
     position: relative;
     width: 300px;
     height: 300px;
-    background-color: #666667;
+    background-color: #3a506b;
+    /* background-image: url("C:\Users\RALVA\portfolio\public\home_image.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; */
 }
 
 .Home_image .image .top-left{
     position: absolute;
     height: 40px;
     width: 40px;
-    border-left: 4px solid #0B0C10;
-    border-top: 4px solid #0B0C10;
+    border-left: 4px solid #050401;
+    border-top: 4px solid #050401;
     left: -20px;
     top: -20px;
 }
@@ -42,8 +46,8 @@
     position: absolute;
     height: 40px;
     width: 40px;
-    border-right: 4px solid #0B0C10;
-    border-top: 4px solid #0B0C10;
+    border-right: 4px solid #050401;
+    border-top: 4px solid #050401;
     right: -20px;
     top: -20px;
 }
@@ -52,8 +56,8 @@
     position: absolute;
     height: 40px;
     width: 40px;
-    border-right: 4px solid #0B0C10;
-    border-bottom: 4px solid #0B0C10;
+    border-right: 4px solid #050401;
+    border-bottom: 4px solid #050401;
     right: -20px;
     bottom: -20px;
 }
@@ -62,8 +66,8 @@
     position: absolute;
     height: 40px;
     width: 40px;
-    border-left: 4px solid #0B0C10;
-    border-bottom: 4px solid #0B0C10;
+    border-left: 4px solid #050401;
+    border-bottom: 4px solid #050401;
     left: -20px;
     bottom: -20px;
 }
@@ -71,18 +75,18 @@
 .Home_title{
     font-weight: 900;
     font-size: 45px;
-    color: #0B0C10;
+    color: #0b132b;
 }
 
 .Home_specialty{
     font-weight: 900;
     font-size: 45px;
-    color: #666667;
+    color: #5bc0be;
 }
 
 .Home_description{
     position: relative;
-    color: #0B0C10;
+    color: #0b132b;
     margin-top: 5px;
     margin-left: 12px;
 }
@@ -94,7 +98,7 @@
     position: absolute;
     left: -12px;
     top: 0;
-    background: #0B0C10;
+    background: #0b132b;
     border-radius: 2px;   
 }
 
@@ -108,7 +112,7 @@
 
 .github_icon, .telegram_icon, .facebook_icon, .instagram_icon{
     height: 35px;
-    color: #0B0C10;
+    color: #0b132b;
     transition: 0.5s;
 }
 
@@ -136,7 +140,7 @@
     }
 
     .Home_specialty{
-        height: 100px;
+        height: 99px;
     }
 
     .Home_description{

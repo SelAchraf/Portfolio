@@ -17,8 +17,8 @@ class Home extends Component{
                             cursor
                             cursorStyle='|'
                             typeSpeed={80}
-                            deleteSpeed={50}
-                            delaySpeed={1500}
+                            deleteSpeed={80}
+                            delaySpeed={600}
                     />
                 </h1>    
                 <p className='Home_description'>This website represents my CV as a computer scientist. From here you can view all my achievements, everything related to my academic career, the diplomas I obtained, my skills, as well as the services that I can provide to you...<br />To contact me, send me an email by going to the Contact page, or through the social media pages below</p>
